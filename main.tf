@@ -11,7 +11,7 @@ resource "aws_s3_bucket_website_configuration" "mywebsite-config" {
 
 resource "aws_s3_bucket_policy" "mywebsite-policy" {
   bucket = aws_s3_bucket.mywebsite.id
-  policy = templatefile("s3-policy.json", { bucket = var.bucketName })
+  policy = templatefile("mywebsite-s3-policy.json", { bucket = var.bucketName })
 }
 
 resource "aws_s3_object" "mywebsite-index" {
