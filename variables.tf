@@ -1,4 +1,4 @@
 variable "bucketName" {
-  default = "www.rgrhodesdev.co.uk"
+  default = "<YOUR WEBSITE URL>"
   type    = string
 }
